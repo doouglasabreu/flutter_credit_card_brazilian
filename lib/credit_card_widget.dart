@@ -359,6 +359,10 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
       <String>['34'],
       <String>['37'],
     },
+    CardType.cabal: <List<String>>{
+      <String>['60'],
+      <String>['99'],
+    },
     CardType.discover: <List<String>>{
       <String>['6011'],
       <String>['622126', '622925'],
@@ -441,10 +445,6 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
       <String>['384100'],
       <String>['384140'],
       <String>['384160'],
-    },
-    CardType.cabal: <List<String>>{
-      <String>['60'],
-      <String>['99'],
     },
     CardType.credishop: <List<String>>{
       <String>['603136'],
