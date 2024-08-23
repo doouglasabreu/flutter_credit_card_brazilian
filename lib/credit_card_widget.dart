@@ -166,15 +166,12 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
     BuildContext context,
     Orientation orientation,
   ) {
-    final TextStyle defaultTextStyle =
-        Theme.of(context).textTheme.headline6!.merge(
-              const TextStyle(
-                color: Colors.black,
-                fontFamily: 'halter',
-                fontSize: 16,
-                package: 'flutter_credit_card_brazilian',
-              ),
-            );
+    final TextStyle defaultTextStyle = const TextStyle(
+      color: Colors.black,
+      fontFamily: 'halter',
+      fontSize: 16,
+      package: 'flutter_credit_card_brazilian',
+    );
 
     final String cvv = widget.obscureCardCvv
         ? widget.cvvCode.replaceAll(RegExp(r'\d'), '*')
@@ -264,15 +261,12 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
     BuildContext context,
     Orientation orientation,
   ) {
-    final TextStyle defaultTextStyle =
-        Theme.of(context).textTheme.headline6!.merge(
-              const TextStyle(
-                color: Colors.white,
-                fontFamily: 'halter',
-                fontSize: 16,
-                package: 'flutter_credit_card_brazilian',
-              ),
-            );
+    final TextStyle defaultTextStyle = TextStyle(
+      color: Colors.black,
+      fontFamily: 'halter',
+      fontSize: 16,
+      package: 'flutter_credit_card_brazilian',
+    );
 
     final String number = widget.obscureCardNumber
         ? widget.cardNumber.replaceAll(RegExp(r'(?<=.{4})\d(?=.{4})'), '*')
